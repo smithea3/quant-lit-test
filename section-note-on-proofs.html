@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--**************************************-->
+<!--*    Generated from PreTeXt source   *-->
+<!--*    on 2019-05-01T19:49:01Z    *-->
+<!--*                                    *-->
+<!--*      https://pretextbook.org       *-->
+<!--*                                    *-->
+<!--**************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AATA A Short Note on Proofs</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width,  initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.11/pretext.js"></script><script src="https://pretextbook.org/js/0.11/pretext_add_on.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/toc.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/colors_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/setcolors.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.2/features.css" rel="stylesheet" type="text/css">
+<script>var logged_in = false;
+var role = 'student';
+var guest_access = true;
+var login_required = false;
+var js_version = 0.11;
+</script>
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div class="hidden-content" style="display:none">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="text-book.html"><span class="title">Testing PreTeX:</span> <span class="subtitle">My Poor Attempt at PreText</span></a></h1>
+<p class="byline">Ethan A. Smith, TBA (Editor)</p>
+</div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sets.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="sets.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-sets-and-equivalence-relations.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sets.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="sets.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-sets-and-equivalence-relations.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link">
+<a href="index.html" data-scroll="index"><span class="title">Front Matter</span></a><ul>
+<li><a href="front-colophon.html" data-scroll="front-colophon">Colophon</a></li>
+<li><a href="author-bio-EAS.html" data-scroll="author-bio-EAS">Author Biography</a></li>
+<li><a href="dedication.html" data-scroll="dedication">Dedication</a></li>
+<li><a href="acknowledgement.html" data-scroll="acknowledgement">Acknowledgements</a></li>
+<li><a href="preface.html" data-scroll="preface">Preface</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="sets.html" data-scroll="sets"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a><ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs" class="active">A Short Note on Proofs</a></li>
+<li><a href="section-sets-and-equivalence-relations.html" data-scroll="section-sets-and-equivalence-relations">Sets and Equivalence Relations</a></li>
+<li><a href="references-1.html" data-scroll="references-1">References and Suggested Readings</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="section-note-on-proofs"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.1</span> <span class="title">A Short Note on Proofs</span>
+</h2>
+<a href="section-note-on-proofs.html" class="permalink">¶</a><section class="introduction" id="introduction-2"><p id="p-8">Abstract mathematics is different from other sciences. In laboratory sciences such as chemistry and physics, scientists perform experiments to discover new principles and verify theories.  Although mathematics is often motivated by physical experimentation or by computer simulations, it is made rigorous through the use of logical arguments.  In studying abstract mathematics, we take what is called an  axiomatic approach; that is, we take a collection of objects \(\mathcal S\) and assume some rules about their structure.  These rules are called <dfn class="terminology">axioms</dfn>.  Using the axioms for \(\mathcal S\text{,}\) we wish to derive other information about \(\mathcal S\) by using logical arguments.  We require that our axioms be consistent; that is, they should not contradict one another.  We also demand that there not be too many axioms. If a system of axioms is too restrictive,  there will be few examples of the mathematical structure.</p>
+<p id="p-9">A <dfn class="terminology">statement</dfn> in logic or mathematics is an assertion that is either true or false.  Consider the following examples:</p>
+<ul class="disc">
+<li id="li-2"><p id="p-10">\(3 + 56 - 13 + 8/2 \text{.}\)</p></li>
+<li id="li-3"><p id="p-11">All cats are black.</p></li>
+<li id="li-4"><p id="p-12">\(2 + 3 = 5\text{.}\)</p></li>
+<li id="li-5"><p id="p-13">\(2x = 6\) exactly when \(x = 4\text{.}\)</p></li>
+<li id="li-6">
+<p id="p-14">If \(ax^2 + bx + c = 0\) and \(a \neq 0\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+\end{equation*}
+</div>
+</li>
+<li id="li-7"><p id="p-15">\(x^3 - 4x^2 + 5 x - 6\text{.}\)</p></li>
+</ul>
+<p>All but the first and last examples are statements, and must be either true or false.</p>
+<p id="p-16">A <dfn class="terminology">mathematical proof</dfn> is nothing more than a convincing argument about the accuracy  of a statement. Such an argument should contain enough detail to convince the audience; for instance, we can see that the statement “\(2x = 6\) exactly when \(x = 4\)” is false by evaluating \(2 \cdot 4\) and noting that \(6 \neq 8\text{,}\) an argument that would satisfy anyone. Of course, audiences may vary widely: proofs can be addressed to another student, to a professor, or to the reader of a text.  If more detail than  needed is presented in the proof, then the  explanation will be either long-winded or poorly written.  If too much detail is omitted, then the proof may  not be convincing.  Again it is important to keep the audience in mind.  High school students require much more detail than do graduate students.  A good rule of thumb for an argument in an introductory abstract algebra course is that it should be written to convince one's peers, whether those peers be other students or other readers of the text.</p>
+<p id="p-17">Let us examine different types of statements.  A statement could be as simple as “\(10/5 = 2\text{;}\)” however, mathematicians are usually interested in more complex statements such as “If \(p\text{,}\) then \(q\text{,}\)” where \(p\) and \(q\) are both statements.  If certain statements are known or assumed to be true, we wish to know what we can say about other statements.  Here \(p\) is called the <dfn class="terminology">hypothesis</dfn> and \(q\) is known as the <dfn class="terminology">conclusion</dfn>.  Consider the following statement: If \(ax^2 + bx + c = 0\) and \(a \neq 0\text{,}\) then</p>
+<div class="displaymath">
+\begin{equation*}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+\end{equation*}
+</div>
+<p>The hypothesis is \(ax^2 + bx + c = 0\) and \(a \neq 0\text{;}\) the conclusion is</p>
+<div class="displaymath">
+\begin{equation*}
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+\end{equation*}
+</div>
+<p>Notice that the  statement says nothing about whether or not the hypothesis is true. However, if this entire statement is true and we can show that \(ax^2 + bx + c = 0\) with \(a \neq 0\) is true, then the conclusion <em class="emphasis">must</em> be true.  A proof of this statement might simply be a series of equations:</p>
+<div class="displaymath">
+\begin{align*}
+ax^2 + bx + c &amp; =  0\\
+x^2 + \frac{b}{a}x &amp; =  - \frac{c}{a}\\
+x^2 + \frac{b}{a}x + \left( \frac{b}{2a} \right)^2 &amp; =  \left( \frac{b}{2a} \right)^2 - \frac{c}{a}\\
+\left(x + \frac{b}{2a} \right)^2 &amp; =  \frac{b^2 - 4ac}{4a^2}\\
+x + \frac{b}{2a}  &amp; =  \frac{ \pm \sqrt{ b^2 -4ac}}{2a}\\
+x &amp; =  \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+\end{align*}
+</div>
+<p id="p-18">If we can prove a statement true, then that statement is called a <dfn class="terminology">proposition</dfn>.  A proposition of major importance is called a <dfn class="terminology">theorem</dfn>.  Sometimes instead of proving a theorem or proposition all at once, we break the proof down into modules; that is, we prove several supporting propositions, which are called <dfn class="terminology">lemmas</dfn>, and use the results of these propositions to prove the main result. If we can prove a proposition or a theorem, we will often, with very little effort, be able to derive other related propositions called <dfn class="terminology">corollaries</dfn>.</p></section><section class="subsection" id="subsection-1"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.1.1</span> <span class="title">Some Cautions and Suggestions</span>
+</h3>
+<p id="p-19">There are several different strategies for proving propositions.  In addition to using different methods of proof, students often make some common mistakes when they are first learning how to prove theorems. To aid students who are studying abstract mathematics for the first time, we list here some of the difficulties that they may encounter and some of the strategies of proof available to them. It is a good idea to keep referring back to this list as a reminder. (Other techniques of proof will become apparent throughout this chapter and the remainder of the text.)</p>
+<ul class="disc">
+<li id="li-8"><p id="p-20">A theorem cannot be proved by example; however, the standard way to show that a statement is not a theorem is to provide a counterexample.</p></li>
+<li id="li-9"><p id="p-21">Quantifiers are important. Words and phrases such as <em class="emphasis">only</em>, <em class="emphasis">for all</em>, <em class="emphasis">for every</em>, and <em class="emphasis">for some</em> possess different meanings.</p></li>
+<li id="li-10"><p id="p-22">Never assume any hypothesis that is not explicitly stated in the theorem.  <em class="emphasis">You cannot take things for granted.</em></p></li>
+<li id="li-11"><p id="p-23">Suppose you wish to show that an object <em class="emphasis">exists</em> and is <em class="emphasis">unique</em>.  First show that there actually is such an object.  To show that it is unique, assume that there are two such objects, say \(r\) and \(s\text{,}\) and then show that \(r = s\text{.}\)</p></li>
+<li id="li-12"><p id="p-24">Sometimes it is easier to prove the contrapositive of a statement.  Proving the statement “If \(p\text{,}\) then \(q\)” is exactly the same as proving the statement “If not \(q\text{,}\) then not \(p\text{.}\)”</p></li>
+<li id="li-13"><p id="p-25">Although it is usually better to find a direct proof of a theorem, this task  can sometimes be difficult. It may be easier to assume that the theorem that you are trying to prove is false, and to hope that in the course of your argument you are forced to make some statement that cannot possibly be true.</p></li>
+</ul>
+<p id="p-26">Remember that one of the main objectives of higher mathematics is proving theorems. Theorems are tools that make new and productive applications of mathematics possible.  We use examples to give insight  into existing theorems and to foster intuitions as to what new theorems might be true.  Applications, examples, and proofs are tightly interconnected—much more so than they may seem at first appearance.</p></section></section></div></main>
+</div>
+<div class="login-link"><span id="loginlogout" class="login">login</span></div>
+<script src="https://pretextbook.org/js/0.11/login.js"></script>
+</body>
+</html>
